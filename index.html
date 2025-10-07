@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Directory</h1>
+        
+        <!-- Add Employee Form -->
+        <div class="form-container">
+            <input type="text" id="nameInput" placeholder="Name" required>
+            <input type="email" id="emailInput" placeholder="Email" required>
+            <select id="positionInput" required>
+                <option value="" disabled selected>Position</option>
+                <option value="Manager">Manager</option>
+                <option value="Team Lead">Team Lead</option>
+                <option value="Senior Developer">Senior Developer</option>
+                <option value="Developer">Developer</option>
+                <option value="Junior Developer">Junior Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="HR Executive">HR Executive</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="DevOps Engineer">DevOps Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="Intern">Intern</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="addBtn" onclick="addEmployee()">Add</button>
+        </div>
+
+        <!-- All Employees Section -->
+        <h2>All Employees</h2>
+        <ul id="employeeList">
+            <!-- Employees will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
